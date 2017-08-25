@@ -4,17 +4,20 @@
 			<img class="menu__logo"src="./assets/logo.png"/>
 		</menu>
 		<header class="header"></header>
+		<services class="services"></services>
 	</div>
 </template>
 
 <script>
 	import Menu from './components/Menu.vue'
 	import Header from './components/Header.vue'
+	import Services from './components/Services.vue'
 	
 	export default {
 		components : {
 			'menu' : Menu,
-			'header' : Header
+			'header' : Header,
+			'services' : Services
 		}
 	}
 </script>
@@ -53,9 +56,26 @@
 
     .header {
         width : 100%;
-        height : 300px;
+        height : 400px;
         background : #00838f;
         position : relative;
         top : 80px;
+    }
+    
+    .services {
+    	width : 100%;
+    	height : 300px;
+    	background : #ddd;
+    	display : flex;
+    	&__wrap {
+    		width : 90%;
+    		height : 350px;
+    		background : linear-gradient(#eee 40%, #ddd 60%);
+    		position : relative;
+    		top : -50px;
+    		margin : auto;
+    		border-radius : 10px;
+    		box-shadow : 0 0 35px rgba(#555, .3);
+    	}
     }
 </style>
