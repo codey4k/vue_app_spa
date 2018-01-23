@@ -1,9 +1,5 @@
 <template>
-    <div class="header">
+    <header class="header">
         <h2>Hello world</h2>
-    </div>
+    </header>
 </template>
-
-<style lang="scss">
-
-</style>

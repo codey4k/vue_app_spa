@@ -27,6 +27,13 @@
 		margin : 0;
 		padding : 0;
 		box-sizing : border-box;
+		transition : all .6s
+	}
+	
+	img,
+	div,
+	section{
+		display : block;
 	}
 	
 	body {}
@@ -35,7 +42,6 @@
 		width : 100%;
 		height : 80px;
 		background : #00838f;
-		box-shadow : 0 5px 10px rgba(#333, .2);
 		position : fixed;
 		z-index : 1000;
 		transition : all .6s;
@@ -45,7 +51,7 @@
 		justify-content : center;
 		
 		&:hover {
-			box-shadow : 0 15px 20px rgba(#333, .3);
+			box-shadow : 0 15px 20px rgba(#333, .2);
 		}
 		
 		&__logo {
@@ -56,26 +62,30 @@
 
     .header {
         width : 100%;
-        height : 400px;
+        height : 100vh;
         background : #00838f;
         position : relative;
+        display : flex;
         top : 80px;
+        h2 {
+        	margin : auto;
+        }
     }
     
     .services {
     	width : 100%;
     	height : 300px;
-    	background : #ddd;
+    	background : #eee;
     	display : flex;
     	&__wrap {
-    		width : 90%;
-    		height : 350px;
-    		background : linear-gradient(#eee 40%, #ddd 60%);
-    		position : relative;
-    		top : -50px;
     		margin : auto;
+    		width : 90%;
+    		height : 320px;
+    		background : #eee;
+    		position : relative;
+    		top : -25px;
     		border-radius : 10px;
-    		box-shadow : 0 0 35px rgba(#555, .3);
+    		box-shadow : 0 0 30px rgba(#333, .4);
     	}
     }
 </style>
