@@ -1,15 +1,22 @@
 <template>
-	<div class="wrap">
-		<Header />
-	</div>
+
+<div class="wrap">
+    <Menu/>
+    <Header />
+</div>
+
 </template>
 
 <script>
+
+import Menu from './components/Menu.vue'
 import Header from './components/Header.vue'
+
 export default {
 	name : 'App',
-	components: {
-		Header
+	components : {
+		'Menu' : Menu,
+		'Header' : Header
 	}
 }
 
@@ -18,7 +25,7 @@ export default {
 <style lang="scss">
 
 :root {
-	--theme : teal;
+	--theme : linear-gradient(155deg, #017c7c 5%, #004c4c 100%);
 	--bg-color : #eee;
 }
 
@@ -34,12 +41,6 @@ export default {
 *::selection {
 	color : #eee;
 	background : #333;
-}
-
-*::before, *::after {
-	content : "";
-	display : block;
-	position : absolute;
 }
 	
 img,
