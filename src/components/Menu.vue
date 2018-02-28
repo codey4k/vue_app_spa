@@ -5,14 +5,16 @@
 
 <script>
     export default {
-        name : 'menu'
+        name : 'Menu'
     }
 </script>
 
-<style scoped lang="scss">
-    .menu {
-        width : 100%;
-        height : 80px;
-        background : green;
-    }
+<style lang="scss" scoped>
+
+.menu {
+    width : 100%;
+    height : 80px;
+    background : green;
+}
+
 <style>
