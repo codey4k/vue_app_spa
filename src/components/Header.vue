@@ -1,6 +1,6 @@
 <template>
     <header class="header" id="Header">
-        <h2>{{msg}}</h2>
+        <h2 class="header__title">{{msg}}</h2>
     </header>
 </template>
 
@@ -9,7 +9,7 @@ export default {
     name : 'Header',
     data() {
         return {
-            msg : 'Happy Hacking whit Vue!'
+            msg : 'Happy Hacking with Vue!'
         }
     }
 }
@@ -19,8 +19,14 @@ export default {
 
 .header{
     width : 100%;
-    height : 200px;
+    height : 300px;
     background : var(--theme);
+    display : flex;
+    
+    &__title {
+        margin : auto;
+        color : var(--bg-color);
+    }
 }
 
 </style>

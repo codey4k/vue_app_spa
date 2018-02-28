@@ -18,7 +18,7 @@ export default {
 <style lang="scss">
 
 :root {
-	--theme : linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);
+	--theme : teal;
 	--bg-color : #eee;
 }
 
@@ -75,7 +75,7 @@ body {
 		width : 5px;
 	}
 	&::-webkit-scrollbar-thumb {
-		background : #0E5CAD;
+		background : var(--theme);
 	}
 	
 }
