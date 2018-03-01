@@ -11,7 +11,34 @@
 <script>
 
 export default {
-    name : 'Menu'
+    name : 'Menu',
+    
+    methods : {
+        handler : function(){
+            const scroll = document.documentElement.scrollTop || document.body.scrollTop,
+                menu = document.getElementById('Menu')
+                
+                
+            if(scroll >= 30){
+                Object.assign(menu.style, {
+                    height : '60px'
+                })
+            }
+            else{
+                Object.assign(menu.style,{
+                    height : '80px'
+                })
+            }
+        }
+    },
+    
+    created:function(){
+        window.addEventListener('scroll',this.handler)
+    },
+    
+    destroyed:function(){
+        window.removeEventListener('scroll', this.handler)
+    }
 }
 
 </script>
@@ -36,7 +63,7 @@ export default {
     }
 
     &__logo{
-        width : 50px;
+        width : 45px;
         height : auto;
         cursor : pointer;
     }
