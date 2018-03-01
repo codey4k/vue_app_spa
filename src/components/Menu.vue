@@ -3,6 +3,7 @@
 <section class="menu" id="Menu">
     <div class="menu__wrap">
         <img src="../assets/logo.png" class="menu__logo" alt="Logo Vue" />
+        <div class="menu__icon" />
     </div>
 </section>
 
@@ -56,6 +57,8 @@ export default {
     box-shadow : 0 5px 20px rgba(#333, .3);
 
     &__wrap{
+        width : 80%;
+        height : 50%;
         margin : auto;
         display : flex;
         align-items : center;
@@ -63,9 +66,25 @@ export default {
     }
 
     &__logo{
-        width : 45px;
+        width : 35px;
         height : auto;
         cursor : pointer;
+    }
+    
+    &__icon {
+        --box : 4px;
+        width : var(--box);
+        height : var(--box);
+        cursor : pointer;
+        background : var(--bg-color);
+        box-shadow : 8px 0 0 0 #eee,
+                    -8px 0 0 0 #eee,
+                    0 8px 0 0 #eee,
+                    0 -8px 0 0 #eee,
+                    8px 8px 0 0 #eee,
+                    -8px -8px 0 0 #eee,
+                    -8px 8px 0 0 #eee,
+                    8px -8px 0 0 #eee;
     }
 
 }
