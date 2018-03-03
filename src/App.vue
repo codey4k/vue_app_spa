@@ -10,7 +10,7 @@
 <script>
 
 import Menu from './components/Menu.vue'
-import Header from './components/Header.vue'
+import Header from './components/header/Header.vue'
 
 export default {
 	name : 'App',
@@ -25,7 +25,7 @@ export default {
 <style lang="scss">
 
 :root {
-	--theme : linear-gradient(155deg, #017c7c 5%, #004c4c 100%);
+	--theme : #003d3d;
 	--bg-color : #eee;
 }
 

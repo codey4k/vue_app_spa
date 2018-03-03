@@ -2,6 +2,7 @@
 
 <section class="menu" id="Menu">
     <div class="menu__wrap">
+        <h2>menu</h2>
         <img src="../assets/logo.png" class="menu__logo" alt="Logo Vue" />
         <div class="menu__icon" />
     </div>
@@ -22,12 +23,14 @@ export default {
                 
             if(scroll >= 30){
                 Object.assign(menu.style, {
-                    height : '60px'
+                    height : '60px',
+                    background : '#004c4c'
                 })
             }
             else{
                 Object.assign(menu.style,{
-                    height : '80px'
+                    height : '80px',
+                    background : 'transparent'
                 })
             }
         }
@@ -50,11 +53,14 @@ export default {
     width : 100%;
     height : 80px;
     position : fixed;
-    background : var(--theme);
+    background : transparent;
     
     display : flex;
+    z-index : 2000;
     
-    box-shadow : 0 5px 20px rgba(#333, .3);
+    &:hover {
+        box-shadow : 0 10px 20px rgba(#333, .3);
+    }
 
     &__wrap{
         width : 80%;
