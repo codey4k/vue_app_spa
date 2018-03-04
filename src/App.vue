@@ -3,6 +3,7 @@
 <div class="wrap">
     <Menu/>
     <Header />
+    <Main />
 </div>
 
 </template>
@@ -10,13 +11,15 @@
 <script>
 
 import Menu from './components/Menu.vue'
+import Main from './components/main/Main.vue'
 import Header from './components/header/Header.vue'
 
 export default {
 	name : 'App',
 	components : {
 		'Menu' : Menu,
-		'Header' : Header
+		'Header' : Header,
+		'Main' : Main
 	}
 }
 
@@ -69,7 +72,7 @@ a {
 body {
 	background : #eee;
 	min-height : 100vh;
-	height : 2000px;
+	//height : 2000px;
 	font-family : 'Helvetica';
 	
 	&::-webkit-scrollbar {
