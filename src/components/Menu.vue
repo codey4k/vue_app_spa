@@ -2,9 +2,9 @@
 
 <section class="menu" id="Menu">
     <div class="menu__wrap">
-        <h2>menu</h2>
+        <div class="menu__left">menu</div>
         <img src="../assets/logo.png" class="menu__logo" alt="Logo Vue" />
-        <div class="menu__icon" />
+        <div class="menu__icon" >icon</div>
     </div>
 </section>
 
@@ -24,7 +24,7 @@ export default {
             if(scroll >= 30){
                 Object.assign(menu.style, {
                     height : '60px',
-                    background : '#004c4c'
+                    background : 'rgba(0, 76, 76, 0.90)'
                 })
             }
             else{
@@ -50,8 +50,11 @@ export default {
 <style lang="scss" scoped>
 
 .menu {
+    --width-std : 40px;
+
     width : 100%;
     height : 80px;
+    color : #eee;
     position : fixed;
     background : transparent;
     
@@ -70,27 +73,26 @@ export default {
         align-items : center;
         justify-content : space-between;
     }
+    
+    &__left {
+        width : var(--width-std);
+        height : 20px;
+        background : #eee;
+    }
 
     &__logo{
-        width : 35px;
+        width : var(--width-std);
         height : auto;
         cursor : pointer;
     }
     
     &__icon {
-        --box : 4px;
-        width : var(--box);
+        //--box : 4px;
+        width : var(--width-std);
         height : var(--box);
         cursor : pointer;
         background : var(--bg-color);
-        box-shadow : 8px 0 0 0 #eee,
-                    -8px 0 0 0 #eee,
-                    0 8px 0 0 #eee,
-                    0 -8px 0 0 #eee,
-                    8px 8px 0 0 #eee,
-                    -8px -8px 0 0 #eee,
-                    -8px 8px 0 0 #eee,
-                    8px -8px 0 0 #eee;
+        
     }
 
 }
