@@ -10,7 +10,7 @@
 
 <script>
 
-import Menu from './components/Menu.vue'
+import Menu from './components/menu/Menu.vue'
 import Main from './components/main/Main.vue'
 import Header from './components/header/Header.vue'
 
@@ -29,7 +29,7 @@ export default {
 
 :root {
 	--theme : #003d3d;
-	--bg-color : #eee;
+	--bg-color : #ccc;
 }
 
 * {

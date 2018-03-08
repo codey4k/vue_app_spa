@@ -3,7 +3,7 @@
 <section class="menu" id="Menu">
     <div class="menu__wrap">
         <div class="menu__left">menu</div>
-        <img src="../assets/logo.png" class="menu__logo" alt="Logo Vue" />
+        <img src="../../assets/logo.png" class="menu__logo" alt="Logo Vue" />
         <div class="menu__icon" >icon</div>
     </div>
 </section>
