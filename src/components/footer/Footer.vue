@@ -17,7 +17,7 @@ export default {
 
 .footer {
     width : 100%;
-    height : 200px;
+    height : 150px;
     background : var(--theme);
 }
 
