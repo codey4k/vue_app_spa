@@ -2,7 +2,7 @@
 
 <main class="main" id="main">
     <div class="main__wrap">
-        <Services />
+        <Feature />
     </div>
 </main>
 
@@ -10,13 +10,13 @@
 
 <script>
 
-import Services from './services/Services.vue'
+import Feature from './feature/Feature.vue'
 
 export default {
     name : 'Main',
     
     components: {
-        'Services' : Services
+        'Feature' : Feature
     }
 }
 
@@ -27,12 +27,14 @@ export default {
 .main {
     width : 100%;
     height : 1000px;
+    /*z-index : 1000;*/
+    position : relative;
     
     &__wrap {
         margin : 0  auto;
         width : 80%;
         height : 100%;
-        background : orange;
+        /*background : orange;*/
     }
 }
 
